@@ -1,0 +1,89 @@
+.checkbox {
+  
+}
+$primary-color: #3F51B5;;
+$secondary-color:#F50057;
+$default-color:#E0E0E0;
+
+$primary-color-hover: #303F9F;
+$secondary-color-hover:#C51162;
+$default-color-hover:#D5D5D5;
+
+/* 
+$primary-color-hover-light: rgba(63, 81, 181, 0.08);;
+$secondary-color-hover-light:rgba(245, 0, 87, 0.08);;
+$default-color-hover-light:rgba(0, 0, 0, 0.04); */
+
+$disabled-color:rgba(0, 0, 0, 0.12);
+$disabled-font-color: rgba(0, 0, 0, 0.26);
+
+$font-family: "Roboto", sans-serif;
+
+$elevation:0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+
+.btn {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+$color-map: (
+    primary: (
+        default: $primary-color,//variable.$primary-color,
+        hover: variable.$primary-color-hover,
+        disabled: rgba(0, 0, 0, 0.12),
+        textColor: #ffffff,
+    ),
+    secondary: (
+        default: variable.$secondary-color,
+        hover: variable.$secondary-color-hover,
+        disabled: rgba(0, 0, 0, 0.12),
+        textColor: #ffffff,
+    ),
+    default: (
+        default: variable.$default-color,
+        hover: variable.$default-color-hover,
+        disabled: rgba(0, 0, 0, 0.12),
+        textColor: rgba(0, 0, 0, 0.87),
+    ),
+);
+
+.switch {
+    cursor: pointer;
+  }
+  
+  .switch-background {
+    fill: #ccc;
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .switch-on .switch-background {
+    fill: #63c76a;
+  }
+  
+  .switch-off .switch-background {
+    fill: #dcdcdc;
+  }
+  
+  .switch-toggle {
+    fill: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .switch-on .switch-toggle {
+    transform: translateX(30px);
+  }
+  
+  .switch-off .switch-toggle {
+    transform: translateX(0);
+  }
